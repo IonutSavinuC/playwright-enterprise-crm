@@ -1,0 +1,9 @@
+{
+  "firstName": "Andrei",
+  "lastName": "Ionescu",
+  "employeeId": "EMP-105",
+  "role": "Automation Architect",
+  "department": "Quality Assurance",
+  "salary": "110000",
+  "status": "Active"
+}
