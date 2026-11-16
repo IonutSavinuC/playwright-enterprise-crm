@@ -16,7 +16,8 @@ export class LoginPage {
     }
 
     async goto() {
-        await this.page.goto('/', { waitUntil: 'domcontentloaded' });
+        await this.page.goto('/');
+        await this.usernameInput.waitFor({ state: 'visible' });
     }
 
     async login(username: string, password: string) {

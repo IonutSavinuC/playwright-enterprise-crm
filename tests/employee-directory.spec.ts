@@ -15,6 +15,7 @@ test.describe('PeopleCore HR - Employee Directory & CRUD Operations', () => {
 
         await loginPage.goto();
         await loginPage.login(adminUser, adminPassword);
+        await expect(dashboardPage.userBadge).toBeVisible();
         
         // Reset demo data before each test so every test starts with the exact 4 initial employees
         await dashboardPage.resetDemoData();
